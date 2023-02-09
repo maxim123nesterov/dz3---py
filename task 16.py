@@ -8,16 +8,17 @@
 # -> 1
 
 N = int(input('Введите размер массива - '))
-#x = int(input('Введите искомое число - '))
-c = 4
-lst = (int, (input().split()))
+x = int(input('Введите искомое число - '))
+numbers = list(map(int,input('Введите массив - ').split(' ')))
 count = 0
-for i in range (len(lst)):
-    if c == lst[i]:
+
+for i in range(len(numbers)):
+    if x == numbers[i]:
         count += 1
+    else:
+        i += 1
 
-
-print(*lst)
+print(numbers)
 print()
 print(count)
 
